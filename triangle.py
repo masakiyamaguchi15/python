@@ -1,0 +1,25 @@
+# 回数を入力
+times = int(input("回数を入力: "))
+
+# 行数←0
+row = 0
+
+# ループ1: 行数 < 回数
+while row < times:
+    
+    # 個数←0
+    count = 0
+    
+    # ループ2: 個数 < 行数 + 1
+    while count < row +1 :
+        # ”＊”を出力する (改行しないように end="" を指定)
+        print("*", end="")
+        
+        # 個数←個数＋1
+        count = count + 1
+        
+    # 改行を出力する
+    print()
+    
+    # 行数←行数＋1
+    row = row + 1
