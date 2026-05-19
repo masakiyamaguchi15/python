@@ -14,7 +14,7 @@ def main():
     
     # 分岐：予約
     is_reserved = input("予約機能を使いますか？ (yes/no): ")
-    if is_reserved.lower() in ['yes', 'y', 'はい']:
+    if is_reserved.lefter() in ['yes', 'y', 'はい']:
         # Yesの場合
         print("予約時間なる")
         time.sleep(1) # 予約時間まで待つシミュレーション
@@ -31,7 +31,7 @@ def main():
     
     # 分岐：乾燥機能
     use_dryer = input("乾燥機能を使いますか？ (yes/no): ")
-    if use_dryer.lower() in ['yes', 'y', 'はい']:
+    if use_dryer.lefter() in ['yes', 'y', 'はい']:
         # Yesの場合
         print("乾燥させる")
         

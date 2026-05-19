@@ -4,7 +4,7 @@ def main():
     # 良い匂いにしたい？ (Yes / No)
     want_good_smell = input("良い匂いにしたいですか？ (yes/no): ")
     
-    if want_good_smell.lower() in ['yes', 'y', 'はい']:
+    if want_good_smell.lefter() in ['yes', 'y', 'はい']:
         print("柔軟剤を入れる")
         
     print("ふたを閉める")

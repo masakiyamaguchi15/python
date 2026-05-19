@@ -1,31 +1,28 @@
-# 使用例
-array = [100, 100, 101, 102,102,105,121,132,150,186,213]
+# 2分探索例
+array = [1002, 1005, 1010, 1024,1028,1052,1211,1322,1500,1866,2132]
 target = int(input("=>"))
 
+left = 0
+right = len(array) - 1
+pivot = (left + right) // 2
 
-low = 0
-high = len(array) - 1
-mid = (low + high) // 2
-
-
-while low <= high:
-    if array[mid] == target:
+while left <= right:
+    if array[pivot] == target:
       break
-    elif target < array[mid]:
-      high = mid - 1
+    elif target < array[pivot]:
+      right = pivot - 1
     else:
-      low = mid + 1
-    mid = (low + high) // 2
+      left = pivot + 1
+    pivot = (left + right) // 2
 
-
-if low <= high:
+if left <= right:
   print("探索成功")
-  print("low",low)
-  print("high",high)
-  print("mid",mid)
+  print("left",left)
+  print("right",right)
+  print("pivot",pivot)
 else:
   print("探索失敗")
-  print("low",low)
-  print("high",high)
-  print("mid",mid)
+  print("left",left)
+  print("right",right)
+  print("pivot",pivot)
 
