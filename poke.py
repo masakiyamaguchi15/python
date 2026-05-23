@@ -1,5 +1,4 @@
 # poke.py
-
 class Monster:
     def __init__(self, name, level, waza):
         self.name = name
@@ -11,20 +10,16 @@ class Monster:
         print(f"レベルは {self.level} です。")
     
     def waza_attack(self):
-        print(f"{self.name} の技は {self.waza} です。")
-
+        print(f"{self.name} の必殺技は {self.waza} です。")
 
 # インスタンス化
 fushigidane = Monster("フシギダネ", 1, "ハートプラント")
 hitokage = Monster("ヒトカゲ", 100, "かえんほうしゃ")
 zenigame = Monster("ゼニガメ", 100, "ハイドロポンプ")
+myu2 = Monster("ミュウツー（色違い）",100,"シャドーボール")
 
-# メソッド実行
-fushigidane.self_introduce()
-fushigidane.waza_attack()
+array = [fushigidane,hitokage,zenigame,myu2]
 
-hitokage.self_introduce()
-hitokage.waza_attack()
-
-zenigame.self_introduce()
-zenigame.waza_attack()
+for i in array:
+    i.self_introduce()
+    i.waza_attack()
