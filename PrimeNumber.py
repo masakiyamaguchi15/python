@@ -4,7 +4,7 @@ pnList = []  # 要素数0の配列
 
 maxNum = int(input("1以上の整数を入力してください: "))
 
-# i を 2 から maxNum まで 1 ずつ増やす (a = maxNum) maxNumは+1する（2からmaxNumまでという意味になる）
+# i を 2 から maxNum まで 1 ずつ増やすmaxNumは+1する（2からmaxNumまでという意味になる）
 for i in range(2, maxNum + 1):
     divideFlag = True    
     # iの正の平方根の整数部分が2未満のときは、繰返し処理を実行しない
